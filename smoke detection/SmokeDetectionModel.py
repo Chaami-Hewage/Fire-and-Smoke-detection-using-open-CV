@@ -7,8 +7,8 @@ from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 from keras.utils import to_categorical
 
 training_data = [
-    "/Users/christaldika/Desktop/FOREST_FIRE_SMOKE_AND_NON_FIRE_DATASET/train/Smoke",
-     "/Users/christaldika/Desktop/FOREST_FIRE_SMOKE_AND_NON_FIRE_DATASET/train/nonfire"
+    "/FOREST_FIRE_SMOKE_AND_NON_FIRE_DATASET/train/Smoke",
+     "/FOREST_FIRE_SMOKE_AND_NON_FIRE_DATASET/train/nonfire"
      ]
 
 def load_images(training_data):
