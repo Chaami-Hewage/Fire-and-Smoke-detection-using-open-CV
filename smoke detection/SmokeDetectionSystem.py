@@ -4,7 +4,7 @@ from keras.models import load_model
 
 
 model = load_model("smoke_detection_model.h5")
-def detect_fire(frame, threshold=0.1):
+def detect_fire(frame, threshold=0.5):
     preprocess_frame = cv2.cvtColor(cv2.resize(frame,(48,48)), cv2.COLOR_BGR2GRAY)
     preprocess_frame = np.expand_dims(preprocess_frame, axis=0)
     preprocess_frame = np.expand_dims(preprocess_frame, axis=-1)
